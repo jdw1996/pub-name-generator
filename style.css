@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=IM+Fell+English+SC);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+
+body {
+    background-color: #FFFFFF;
+    text-align: center;
+    font-family: "Source Sans Pro";
+    font-weight: normal;
+    font-size: 20pt;
+    color: #202020;
+}
+
+h1, h2 {
+    text-align: left;
+    font-family: "Source Code Pro";
+    font-weight: normal;
+    font-size: 16pt;
+    margin-bottom: 5em;
+}
+
+#page-title {
+    float: left;
+}
+
+#page-author {
+    float: right;
+}
+
+#header-end {
+    clear: both;
+}
+
+.pub-sign {
+    font-family: "IM Fell English SC";
+    font-weight: normal;
+    margin-bottom: 5em;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    font-size: 28pt;
+}
+
+#pub-name {
+    font-size: 80pt;
+    margin: 0pt;
+}
