@@ -46,3 +46,9 @@ h1, h2 {
     font-size: 80pt;
     margin: 0pt;
 }
+
+button {
+    font-family: inherit;
+    font-size: 0.7em;
+    padding: 0;
+}
