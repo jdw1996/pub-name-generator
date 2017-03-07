@@ -203,7 +203,6 @@ List<String> ADJECTIVES = [
     "Comely",
     "Cowardly",
     "Craven",
-    "Crazed",
     "Dancing",
     "Dark",
     "Drunken",
