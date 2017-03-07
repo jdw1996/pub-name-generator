@@ -17,7 +17,20 @@ import 'constants.dart';
 void main() {
     Element pubName = querySelector("#pub-name");
     PubNameGenerator pubNameGenerator = new PubNameGenerator();
+    bool rIsPressed = false;
+
     pubName.text = pubNameGenerator.getNewName();
+    window.onKeyDown.listen((KeyboardEvent event) {
+        if (event.keyCode == KeyCode.R && !rIsPressed) {
+            pubName.text = pubNameGenerator.getNewName();
+            rIsPressed = true;
+        }
+    });
+    window.onKeyUp.listen((KeyboardEvent event) {
+        if (event.keyCode == KeyCode.R) {
+            rIsPressed = false;
+        }
+    });
 }
 
 
