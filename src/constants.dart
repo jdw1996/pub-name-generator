@@ -201,6 +201,7 @@ List<String> ADJECTIVES = [
     "Blue",
     "Clever",
     "Comely",
+    "Cowardly",
     "Craven",
     "Crazed",
     "Dancing",
