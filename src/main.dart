@@ -17,18 +17,21 @@ import 'constants.dart';
 void main() {
     Element pubName = querySelector("#pub-name");
     PubNameGenerator pubNameGenerator = new PubNameGenerator();
-    bool rIsPressed = false;
+    ButtonElement button = querySelector("#reload-button");
+    bool nIsPressed = false;
 
     pubName.text = pubNameGenerator.getNewName();
+
+    button.onClick.listen((e) => pubName.text = pubNameGenerator.getNewName());
     window.onKeyDown.listen((KeyboardEvent event) {
-        if (event.keyCode == KeyCode.R && !rIsPressed) {
+        if (event.keyCode == KeyCode.N && !nIsPressed) {
             pubName.text = pubNameGenerator.getNewName();
-            rIsPressed = true;
+            nIsPressed = true;
         }
     });
     window.onKeyUp.listen((KeyboardEvent event) {
-        if (event.keyCode == KeyCode.R) {
-            rIsPressed = false;
+        if (event.keyCode == KeyCode.N) {
+            nIsPressed = false;
         }
     });
 }
