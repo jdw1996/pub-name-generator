@@ -45,6 +45,7 @@ class PubNameGenerator {
 
     Random random;
 
+
     // Constructor
     PubNameGenerator() {
         random = new Random();
