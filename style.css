@@ -19,6 +19,16 @@ h1, h2 {
     margin-bottom: 5em;
 }
 
+a {
+    color: #268bd2;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
 #page-title {
     float: left;
 }
